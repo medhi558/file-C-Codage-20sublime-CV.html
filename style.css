@@ -1,0 +1,32 @@
+div {
+
+	text-align: center;
+}
+
+p
+{
+    font-family: Times New Roman;
+}
+
+body{
+
+	margin: 0px 300px
+}
+
+div#menu {
+	float:left;
+	width:200px;
+	height:800px;
+	background-color:#FF6699;
+	}
+
+
+.Citation {
+	border: 2px solid blue; 
+    display: block;
+    margin: 25px;
+    padding: 25px;
+    width: 75%;
+    box-shadow: 10px 10px 5px gray;
+    text-align: justify;
+}
