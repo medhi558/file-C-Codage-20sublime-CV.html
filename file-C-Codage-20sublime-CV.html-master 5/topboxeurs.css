@@ -1,0 +1,108 @@
+/* TOUT CECI QUI EST EN DESSOUS DEVRAIT ETRE DANS UN FICHIER CSS COMMUN POUR TOUTE LES PAGES */
+
+* { /* POUR RESEST LES MAGIN ET PADDING DE TOUT LES ELEMENT */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	min-width: 750px;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	background-color:#E5DFDB;
+}
+
+.menu {
+	text-align: center;
+	width:200px;
+	background-color:#A79990;
+	margin: 8px;
+}
+
+.menu .submenu a {
+	text-decoration: none;
+	color: black;
+}
+
+.menu .submenu ul {
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.menu .submenu ul li  {
+	list-style-type: none; 
+	padding: 6px 25px;
+	background: #C9001A;
+	color: #FFFFFF;
+	-webkit-transition: all 1.8s ease-out 0s;
+	-moz-transition: all 1.8s ease-out 0s;
+	transition: all 1.2s ease-out 0s;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border: 4px dashed #000000;
+	margin-bottom: 18px;
+	text-align: center;
+}
+
+.menu .submenu ul li:hover {
+	background: #8FCF3C;
+	color: #000000;
+	border: 4px solid #34393E;
+}
+
+.menu .submenu ul li:last-child { /*LA ON SELECTIONNE LE DERNIER BOUTON AVEC "last-child" ET ON LUI DESACTIVE LA MARGE DU BAS */
+	margin-bottom: 0px;
+}
+
+.content
+{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 8px;
+}
+
+/* TOUT CE QUI EST EN DESSOUS DEVRAIT ETRE DANS UN FICHIER CSS JUSTE POUR LA PAGE TOPBOXEURS */
+
+.list-boxer {
+	margin: 30px;
+	width: 90%;
+}
+
+.list-boxer li {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+.list-boxer li:nth-child(even) { /* "nth-child(even)" PERMET DE SELECTIONNER QUES LES ELEMENT PAIR DE LA LIST ET  "flex-direction: row-reverse" PERMET D'INVERSE LE SENS DONC TEXT EN PREMIER IMAGE EN DERNIER */
+	flex-direction: row-reverse;
+}
+
+.list-boxer li img {
+	margin: 0 20px;
+}
+
+.list-boxer li .description {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.list-boxer li .description h2 {
+	margin-bottom: 20px;
+	border-width: 1px 2px 2px 1px;
+    border-style: solid;
+	border-color: black;
+	padding: 15px;
+}
